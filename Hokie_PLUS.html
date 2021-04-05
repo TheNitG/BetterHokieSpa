@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 15%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #282C34;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ABB2BF;
+  display: block;
+  border-bottom: 1px solid #F2F0F2;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+iframe {
+  position: fixed;
+  top: 0;
+  left: 15%;
+  bottom: 0;
+  right: 0;
+  width: 85%;
+  height: 100%;
+  border: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  z-index: 999999;
+}
+
+a.selected {
+  color: #61AFEF
+}
+
+.main {
+  height: 100%;
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+  background-color: #F2F0F2;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div class="sidenav">
+  <a href="VT_Alerts.html">VT Alerts</a>
+  <a class="selected" href="Hokie_PLUS.html">Hokie PLUS</a>
+  <a href="index.html">Hokie Spa</a>
+  <a href="Timetable_Of_Classes.html">Timetable of Classes</a>
+  <a href="Graduate_Admissions.html">Graduation Admissions</a>
+  <a href="Hokie_Wallet.html">Hokie Wallet</a>
+  <a href="Reporting_System_Menu.html">Dean of Students Reporting System Menu</a>
+  <a href="Faculty_Credential_System.html">Faculty Online Credential System</a>
+</div>
+
+<div class="main">
+  <iframe src="https://apps.es.vt.edu/ssb/twbkwbis.P_GenMenu?name=bmenu.P_GenMnu"></iframe>
+</div>
+   
+</body>
+</html> 
